@@ -12,7 +12,7 @@ echo "your pass is $pass"
 
 ###########################################
 
-read -p "what is your favorite animal? "
+read -p "what is your password? "
 echo "your pass is $pass"
 
 ###########################################
