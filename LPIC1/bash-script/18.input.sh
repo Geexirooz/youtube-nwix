@@ -12,8 +12,8 @@ echo "your pass is $pass"
 
 ###########################################
 
-read -p "what is your password? "
-echo "your pass is $pass"
+read -p "what is your password? " password
+echo "your pass is $password"
 
 ###########################################
 
