@@ -1,0 +1,45 @@
+#!/bin/sh
+echo "Generating Makefile..."
+
+# Default USERNAME
+USERNAME="World"
+for i in "$@"; do
+case $i in
+    USERNAME=*)
+    USERNAME="${i#*=}"
+    shift
+    ;;
+    *)
+    ;;
+esac
+done
+
+# Create the Makefile with the USERNAME
+cat > Makefile <<EOF
+# Define the compiler
+CC = gcc
+
+# Define the compiler flags
+CFLAGS = -Wall -g
+
+# Define the target executable
+TARGET = hello
+
+# Define USERNAME
+USERNAME = ${USERNAME}
+
+# Rule to build the target
+all: \$(TARGET)
+
+\$(TARGET): src/hello.o
+	\$(CC) \$(CFLAGS) -o \$(TARGET) src/hello.o
+
+src/hello.o: src/hello.c
+	\$(CC) \$(CFLAGS) -DUSERNAME=\\"\$(USERNAME)\\" -c src/hello.c -o src/hello.o
+
+clean:
+	rm -f src/hello.o \$(TARGET)
+EOF
+
+echo "Makefile generated with USERNAME=${USERNAME}"
+
