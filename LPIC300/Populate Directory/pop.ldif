@@ -1,0 +1,115 @@
+dn: ou=people,dc=nwix,dc=local
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=nwix,dc=local
+objectClass: organizationalUnit
+ou: groups
+
+# User: amani
+dn: uid=amani,ou=people,dc=nwix,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+uid: amani
+cn: Reza Amani
+sn: Amani
+uidNumber: 10000
+gidNumber: 10000
+homeDirectory: /home/amani
+loginShell: /bin/bash
+
+dn: cn=amani,ou=groups,dc=nwix,dc=local
+objectClass: posixGroup
+cn: amani
+gidNumber: 10000
+memberUid: amani
+
+# User: sabeti
+dn: uid=sabeti,ou=people,dc=nwix,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+uid: sabeti
+cn: Hosein Sabeti
+sn: Sabeti
+uidNumber: 10001
+gidNumber: 10001
+homeDirectory: /home/sabeti
+loginShell: /bin/bash
+
+dn: cn=sabeti,ou=groups,dc=nwix,dc=local
+objectClass: posixGroup
+cn: sabeti
+gidNumber: 10001
+memberUid: sabeti
+
+# User: naseri
+dn: uid=naseri,ou=people,dc=nwix,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+uid: naseri
+cn: Mona Naseri
+sn: Naseri
+uidNumber: 10002
+gidNumber: 10002
+homeDirectory: /home/naseri
+loginShell: /bin/bash
+
+dn: cn=naseri,ou=groups,dc=nwix,dc=local
+objectClass: posixGroup
+cn: naseri
+gidNumber: 10002
+memberUid: naseri
+
+# User: rezayi
+dn: uid=rezayi,ou=people,dc=nwix,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+uid: rezayi
+cn: Shiva Rezayi
+sn: Rezayi
+uidNumber: 10003
+gidNumber: 10003
+homeDirectory: /home/rezayi
+loginShell: /bin/bash
+
+dn: cn=rezayi,ou=groups,dc=nwix,dc=local
+objectClass: posixGroup
+cn: rezayi
+gidNumber: 10003
+memberUid: rezayi
+
+# User: nemati
+dn: uid=nemati,ou=people,dc=nwix,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+uid: nemati
+cn: Bahram Nemati
+sn: Nemati
+uidNumber: 10004
+gidNumber: 10004
+homeDirectory: /home/nemati
+loginShell: /bin/bash
+
+dn: cn=nemati,ou=groups,dc=nwix,dc=local
+objectClass: posixGroup
+cn: nemati
+gidNumber: 10004
+memberUid: nemati
+
+# User: kermani
+dn: uid=kermani,ou=people,dc=nwix,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+uid: kermani
+cn: Neda Kermani
+sn: Kermani
+uidNumber: 10005
+gidNumber: 10005
+homeDirectory: /home/kermani
+loginShell: /bin/bash
+
+dn: cn=kermani,ou=groups,dc=nwix,dc=local
+objectClass: posixGroup
+cn: kermani
+gidNumber: 10005
+memberUid: kermani
