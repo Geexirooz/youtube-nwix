@@ -13,6 +13,10 @@ docker run hello-basic
 docker build -t nwix-hello:v1 .
 docker run hello-basic:v1
 
+# check dependencies of a tool
+ldd /absolute/path/to/tool
+ldd $(which TOOL_NAME)
+
 #extract an image
 docker save myimg > myimg.tar
 
